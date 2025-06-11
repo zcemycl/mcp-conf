@@ -1,0 +1,42 @@
+{
+    "mcpServers": {
+      "github.com/modelcontextprotocol/servers/tree/main/src/filesystem": {
+        "autoApprove": [],
+        "disabled": false,
+        "timeout": 60,
+        "type": "stdio",
+        "command": "wsl.exe",
+        "args": [
+          "bash",
+          "-c",
+          "source /home/leoleung/.nvm/nvm.sh && /home/leoleung/.nvm/versions/node/v23.6.0/bin/npx -y @modelcontextprotocol/server-filesystem /home/leoleung/proj/rxscope/hc-datalake"
+        ]
+      },
+      "github.com/AgentDeskAI/browser-tools-mcp": {
+        "autoApprove": [],
+        "disabled": true,
+        "timeout": 60,
+        "type": "stdio",
+        "command": "wsl.exe",
+        "args": [
+          "bash",
+          "-c",
+          "source /home/leoleung/.nvm/nvm.sh && node /home/leoleung/Cline/MCP/browser-tools-mcp/node_modules/@agentdeskai/browser-tools-mcp/dist/mcp-server.js"
+        ]
+      },
+      "github.com/awslabs/mcp/tree/main/src/terraform-mcp-server": {
+        "command": "wsl.exe",
+        "args": [
+          "bash",
+          "-c",
+          "source /home/leoleung/.cache/pypoetry/virtualenvs/hc-data-discovery-tDBrDD4N-py3.11/bin/activate && awslabs.terraform-mcp-server"
+        ],
+        "env": {
+          "FASTMCP_LOG_LEVEL": "ERROR"
+        },
+        "disabled": false,
+        "autoApprove": []
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "mcpServers": {
+      "browser-tools": {
+        "command": "wsl.exe",
+        "args": [
+          "bash",
+          "-c",
+          "'source /home/leoleung/.nvm/nvm.sh && /home/leoleung/.nvm/versions/node/v23.6.0/bin/npx -y @agentdeskai/browser-tools-mcp@1.2.0'"
+        ],
+        "enabled": true
+      },
+      "docker-mcp": {
+        "command": "wsl.exe",
+        "args": [
+          "bash",
+          "-c",
+          "'/home/leoleung/.local/bin/uvx docker-mcp'"
+        ],
+        "enabled": true
+      }
+    }
+  }
